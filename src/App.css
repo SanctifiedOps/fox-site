@@ -690,3 +690,21 @@
     left: 0;
   }
 }
+
+
+/* Remove underline from any link styled as a button */
+.btn a,
+.btn-primary a,
+.btn-outline a,
+.navbar-actions a {
+  text-decoration: none !important;
+  color: inherit !important;   /* keeps the same text colour as the button */
+}
+
+/* Also remove underline on hover */
+.btn a:hover,
+.btn-primary a:hover,
+.btn-outline a:hover,
+.navbar-actions a:hover {
+  text-decoration: none !important;
+}
