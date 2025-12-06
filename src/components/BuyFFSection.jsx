@@ -17,7 +17,7 @@ const BuyFFSection = () => {
     <section id="buy" className="section section-buy reveal">
       <div className="section-header">
         <p className="section-kicker">Buy $FF</p>
-        <h2>Three steps to join the movement.</h2>
+        <h2>Three steps to join the movement</h2>
         <p className="section-subtitle">
           Always double-check contract addresses and only use funds you can afford to risk.
         </p>

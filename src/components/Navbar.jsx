@@ -40,6 +40,10 @@ const Navbar = () => {
 
   const handleNavClick = (event, sectionId) => {
     event.preventDefault();
+    if (window.location.pathname !== "/") {
+      window.location.href = `${window.location.origin}/#${sectionId}`;
+      return;
+    }
     handleScroll(sectionId);
   };
 
@@ -69,16 +73,16 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-links">
-          <a href="#about" onClick={(event) => handleNavClick(event, "about")}>
+          <a href="/#about" onClick={(event) => handleNavClick(event, "about")}>
             About
           </a>
-          <a href="#mission" onClick={(event) => handleNavClick(event, "mission")}>
+          <a href="/#mission" onClick={(event) => handleNavClick(event, "mission")}>
             Mission
           </a>
-          <a href="#media" onClick={(event) => handleNavClick(event, "media")}>
+          <a href="/#media" onClick={(event) => handleNavClick(event, "media")}>
             Media
           </a>
-          <a href="#links" onClick={(event) => handleNavClick(event, "links")}>
+          <a href="/#links" onClick={(event) => handleNavClick(event, "links")}>
             Links
           </a>
         </div>
@@ -121,16 +125,16 @@ const Navbar = () => {
 
       <div className={`navbar-drawer ${navOpen ? "open" : ""}`}>
         <div className="drawer-links">
-          <a href="#about" onClick={(event) => handleNavClick(event, "about")}>
+          <a href="/#about" onClick={(event) => handleNavClick(event, "about")}>
             About
           </a>
-          <a href="#mission" onClick={(event) => handleNavClick(event, "mission")}>
+          <a href="/#mission" onClick={(event) => handleNavClick(event, "mission")}>
             Mission
           </a>
-          <a href="#media" onClick={(event) => handleNavClick(event, "media")}>
+          <a href="/#media" onClick={(event) => handleNavClick(event, "media")}>
             Media
           </a>
-          <a href="#links" onClick={(event) => handleNavClick(event, "links")}>
+          <a href="/#links" onClick={(event) => handleNavClick(event, "links")}>
             Links
           </a>
         </div>

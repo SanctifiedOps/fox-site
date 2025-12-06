@@ -7,6 +7,8 @@ import MediaSection from "./components/MediaSection.jsx";
 import BuyFFSection from "./components/BuyFFSection.jsx";
 import LinksSection from "./components/LinksSection.jsx";
 import Footer from "./components/Footer.jsx";
+import ffChair from "./assets/ff-chair.jpg";
+import PfpPage from "./pages/PfpPage.jsx";
 
 const App = () => {
   const [pageReady, setPageReady] = useState(false);
@@ -38,16 +40,48 @@ const App = () => {
     return () => observer.disconnect();
   }, []);
 
+  const isPfpRoute = typeof window !== "undefined" && window.location.pathname === "/pfp";
+
   return (
     <div className={`app ${pageReady ? "is-ready" : ""}`}>
       <Navbar />
-      <main className="main-content">
+      <main className={`main-content ${isPfpRoute ? "pfp-route" : ""}`}>
+        {isPfpRoute ? (
+          <PfpPage />
+        ) : (
+          <>
         <Hero />
         <AboutSection />
         <MissionSection />
+        <section className="pfp-cta-section">
+          <div className="pfp-cta-text">
+            <p className="pfp-cta-pill">PFP Generator</p>
+            <h3>Secure a seat at the table of Financial Freedom.</h3>
+            <div className="pfp-cta-copy">
+              <p>
+                Upload a selfie, let our refinements sit you among the movement, and
+                carry the gilded aura of the Financial Freedom table across socials.
+              </p>
+              <span className="pfp-cta-disclaimer">
+                Disclaimer: The generator follows safety guardrails, so certain prompts may be declined.
+              </span>
+            </div>
+            <div className="pfp-cta-footer">
+              <div className="btn btn-secondary pfp-cta-btn pfp-cta-soon" aria-disabled="true">
+                Coming soon
+              </div>
+            </div>
+          </div>
+          <figure className="pfp-cta-visual">
+            <img src={ffChair} alt="Financial Freedom chair" />
+            <figcaption>CLAIM YOUR SEAT AT THE TABLE</figcaption>
+          </figure>
+        </section>
         <MediaSection />
-        <BuyFFSection />
-        <LinksSection />
+            <BuyFFSection />
+            <LinksSection />
+          </>
+        )}
       </main>
       <Footer />
     </div>

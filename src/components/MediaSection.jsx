@@ -163,7 +163,7 @@ const MediaSection = () => {
     <section id="media" className="section section-media reveal">
       <div className="section-header">
         <p className="section-kicker">Media</p>
-        <h2>Moments from the movement.</h2>
+        <h2>Moments from the movement</h2>
         <p className="section-subtitle">
           A rolling gallery of visuals from the Financial Freedom community.
         </p>

@@ -3,7 +3,7 @@ const LinksSection = () => {
     <section id="links" className="section section-links reveal">
       <header className="section-header">
         <div className="section-kicker">Links</div>
-        <h2>Follow the freedom stack.</h2>
+        <h2>Follow the freedom stack</h2>
         <p className="section-subtitle">
           Official links only. Bookmark this page and avoid random DMs or fake accounts.
         </p>

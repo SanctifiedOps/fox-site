@@ -3,7 +3,7 @@ const AboutSection = () => {
     <section id="about" className="section reveal">
       <div className="section-header">
         <p className="section-kicker">About</p>
-        <h2>Breaking out of the default setting.</h2>
+        <h2>Breaking out of the default setting</h2>
         <p className="section-subtitle">
           Financial Freedom is for people who look at their life and know this cannot
           be the whole story. Work, bills, stress, repeat. We are here for the ones

@@ -3,7 +3,7 @@ const MissionSection = () => {
     <section id="mission" className="section section-mission reveal">
       <div className="section-header">
         <p className="section-kicker">Mission</p>
-        <h2>Our path to financial freedom.</h2>
+        <h2>Our path to financial freedom</h2>
         <p className="section-subtitle">
           The mission is simple: use Solana&apos;s speed and composability to create practical
           paths to financial freedom for normal people, not just insiders.
