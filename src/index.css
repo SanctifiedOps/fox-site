@@ -1,0 +1,39 @@
+:root {
+  color-scheme: dark;
+  --ff-bg: #050505;
+  --ff-bg-elevated: #111111;
+  --ff-bg-soft: #181818;
+  --ff-gold: #f5b941;
+  --ff-gold-soft: #f7d17a;
+  --ff-text: #fafafa;
+  --ff-muted: #a0a0a0;
+  --ff-border: #262626;
+  --ff-radius-lg: 24px;
+  --ff-radius-md: 16px;
+  --ff-radius-pill: 999px;
+  --ff-shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.65);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  background: radial-gradient(circle at top left, #222222 0, #050505 50%, #000000 100%);
+  color: var(--ff-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
