@@ -1,17 +1,17 @@
 :root {
-  color-scheme: dark;
-  --ff-bg: #050505;
-  --ff-bg-elevated: #111111;
-  --ff-bg-soft: #181818;
-  --ff-gold: #f5b941;
-  --ff-gold-soft: #f7d17a;
-  --ff-text: #fafafa;
-  --ff-muted: #a0a0a0;
-  --ff-border: #262626;
+  color-scheme: light;
+  --ff-bg: #feac04;
+  --ff-bg-elevated: #ffd25a;
+  --ff-bg-soft: #fff0bf;
+  --ff-gold: #feac04; /* primary accent */
+  --ff-gold-soft: #ffd978;
+  --ff-text: #2a1503;
+  --ff-muted: #6b4210;
+  --ff-border: #f7c54a;
   --ff-radius-lg: 24px;
   --ff-radius-md: 16px;
   --ff-radius-pill: 999px;
-  --ff-shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.65);
+  --ff-shadow-soft: 0 18px 45px rgba(254, 172, 4, 0.32);
 }
 
 *,
@@ -29,8 +29,8 @@ body,
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-  background: radial-gradient(circle at top left, #222222 0, #050505 50%, #000000 100%);
+  font-family: "Nunito", "Inter", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 12% 18%, #fff5d8 0, #ffd874 40%, #feac04 95%);
   color: var(--ff-text);
 }
 

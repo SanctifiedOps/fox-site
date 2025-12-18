@@ -1,12 +1,14 @@
+import { TOKEN_TICKER } from "../constants.js";
+
 const MissionSection = () => {
   return (
     <section id="mission" className="section section-mission reveal">
       <div className="section-header">
         <p className="section-kicker">Mission</p>
-        <h2>Our path to financial freedom</h2>
+        <h2>Run with the foxes</h2>
         <p className="section-subtitle">
-          The mission is simple: use Solana&apos;s speed and composability to create practical
-          paths to financial freedom for normal people, not just insiders.
+          We are here to make {TOKEN_TICKER} the foxhole for builders, traders, and community-first
+          degens on Solana.
         </p>
       </div>
 
@@ -14,22 +16,22 @@ const MissionSection = () => {
         <div className="card">
           <h3>Educate</h3>
           <p>
-            Break down complex on-chain strategies into simple, repeatable plays. We share what
-            we learn in public so the whole community levels up.
+            Break down plays so every holder can keep up. Share what works, warn on traps, and help
+            new foxes move confidently on-chain.
           </p>
         </div>
         <div className="card">
-          <h3>Compound</h3>
+          <h3>Coordinate</h3>
           <p>
-            Use $FF to coordinate around yield, opportunity, and discipline. We are here to grow
-            accounts, not just chase pumps.
+            Use {TOKEN_TICKER} to rally around launches, raids, and real utility experiments. When
+            the pack moves together, we move further.
           </p>
         </div>
         <div className="card">
-          <h3>Break free</h3>
+          <h3>Have fun</h3>
           <p>
-            Help more holders reach the point where work becomes optional, creativity is funded,
-            and time is owned, not rented.
+            Keep the memes flowing, celebrate the wins, and make the Fox den the loudest, kindest
+            corner of Solana.
           </p>
         </div>
       </div>

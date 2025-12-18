@@ -1,34 +1,35 @@
+import { TOKEN_NAME, TOKEN_TICKER } from "../constants.js";
+
 const AboutSection = () => {
   return (
     <section id="about" className="section reveal">
       <div className="section-header">
         <p className="section-kicker">About</p>
-        <h2>Breaking out of the default setting</h2>
+        <h2>Fox Coin is for people who want more</h2>
         <p className="section-subtitle">
-          Financial Freedom is for people who look at their life and know this cannot
-          be the whole story. Work, bills, stress, repeat. We are here for the ones
-          who want ownership over their time, their money, and their future.
+          $FOX was created to honour Pochita, the adopted sister of Cheems, one of the most recognisable and influential figures in internet culture.
         </p>
       </div>
 
       <div className="about-body">
         <p>
-          The dream is simple: wake up because you want to, not because you have to.
-          Money handled, time uncapped, energy spent on the people and projects that
-          actually matter. That kind of freedom is not an accident and it is not given
-          out of kindness. It is built on purpose.
+          Cheems, also known as Balltze, became a global icon through memes that defined an era of online humour and community. When he passed away in 2023, millions of people felt the loss. His presence had become larger than a meme. It represented shared culture, comfort, and connection on the internet.
         </p>
 
         <p>
-          Financial Freedom is a community for people who are willing to do that work.
-          To learn, to question the script, to step outside what is normal in their
-          circle and aim higher. We are not selling guarantees or magic plays. We are
-          building a place where ambition is normal and talking about money is honest.
+          Pochita later joined the same family and quickly found her own place in the community. In a post that would spark something bigger, her owner described her as a fox. The idea resonated. The community embraced it, and Fox Coin was born to immortalise Pochita on chain.
         </p>
 
         <p>
-          If you feel like you were meant for more than surviving until Friday, you are
-          already one of us. $FF is simply the flag we build under.
+          $FOX is not trying to replace Cheems or recreate the past. It exists as a continuation of that story. A new chapter built on affection, humour, and shared internet history. It reflects how culture forms naturally online, through moments that feel honest rather than manufactured.
+        </p>
+
+        <p>
+          This project is community driven at its core. It is about preserving a piece of meme history, celebrating Pochita’s place in it, and giving people a shared symbol to rally around. No complicated narrative. No forced utility. Just a token rooted in culture, memory, and the collective decision to make something last.
+        </p>
+
+        <p>
+          $FOX is for those who understand where this space came from and want to carry that spirit forward.
         </p>
       </div>
     </section>

@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { CONTRACT_ADDRESS, TOKEN_TICKER } from "../constants.js";
 
 const BuyFFSection = () => {
   const [toastMessage, setToastMessage] = useState("");
 
   const handleCopyCA = async () => {
     try {
-      await navigator.clipboard.writeText("758yZPp2QEmrMgMACiUS2K2sTLsfSw9NprWoGxdxbonk");
+      await navigator.clipboard.writeText(CONTRACT_ADDRESS);
       setToastMessage("Contract copied");
     } catch (err) {
       setToastMessage("Clipboard blocked — press Ctrl+C");
@@ -16,10 +17,10 @@ const BuyFFSection = () => {
   return (
     <section id="buy" className="section section-buy reveal">
       <div className="section-header">
-        <p className="section-kicker">Buy $FF</p>
-        <h2>Three steps to join the movement</h2>
+        <p className="section-kicker">Buy {TOKEN_TICKER}</p>
+        <h2>Three steps to join the Fox den</h2>
         <p className="section-subtitle">
-          Always double-check contract addresses and only use funds you can afford to risk.
+          Always double-check the Fox Coin contract address and only use funds you can afford to risk.
         </p>
       </div>
 
@@ -35,10 +36,10 @@ const BuyFFSection = () => {
 
         <div className="card">
           <div className="step-label">Step 2</div>
-          <h3>Paste the $FF contract</h3>
+          <h3>Paste the {TOKEN_TICKER} contract</h3>
           <p>
-            Go to your chosen DEX aggregator, paste the official $FF contract address,
-            and double-check that the token name and logo match.
+            Go to your chosen DEX aggregator, paste the official {TOKEN_TICKER} contract address,
+            and double-check that the token name and logo match Fox Coin.
           </p>
 
           <div
@@ -55,10 +56,10 @@ const BuyFFSection = () => {
 
         <div className="card card-highlight">
           <span className="step-label">Step 3</span>
-          <h3>Hold your ticket to freedom</h3>
+          <h3>Hold your Fox Coin</h3>
           <p>
             Confirm the swap, store your seed phrase offline, and plug into the community.
-            Hold $FF, learn, build, and move step by step toward financial freedom.
+            Hold {TOKEN_TICKER}, learn, build, and have fun with the pack.
           </p>
         </div>
       </div>

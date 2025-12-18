@@ -27,7 +27,7 @@ try {
 
 // Prompt mirrors the working Playground behaviour: background is sacred; only the character changes.
 const compositePrompt = `
-Use the FIRST image as the fixed Financial Freedom jet cabin background.
+Use the FIRST image as the fixed Fox Coin jet cabin background.
 Do NOT change its camera angle, table, logo, glass, colours, or lighting.
 
 Use the SECOND image only to understand who the character is

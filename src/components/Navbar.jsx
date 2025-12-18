@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import ffLogo from "../assets/ff-logo.png";
+import { BUY_LINK, CONTRACT_ADDRESS, TOKEN_NAME, TOKEN_TICKER } from "../constants.js";
 
-const CONTRACT_ADDRESS = "758yZPp2QEmrMgMACiUS2K2sTLsfSw9NprWoGxdxbonk";
+const navLogo = "/fox-logo.png";
 
 const Navbar = () => {
   const [copied, setCopied] = useState(false);
@@ -68,8 +68,8 @@ const Navbar = () => {
 
       <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
         <div className="navbar-left">
-          <img src={ffLogo} alt="Financial Freedom" className="navbar-logo" />
-          <div className="navbar-brand">Financial Freedom</div>
+          <img src={navLogo} alt="Fox Coin" className="navbar-logo" />
+          <div className="navbar-brand">{TOKEN_NAME}</div>
         </div>
 
         <div className="navbar-links">
@@ -96,13 +96,8 @@ const Navbar = () => {
             {copied ? "Copied" : "Copy CA"}
           </button>
 
-          <a
-            className="btn btn-primary"
-            href="https://bonk.fun/token/758yZPp2QEmrMgMACiUS2K2sTLsfSw9NprWoGxdxbonk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Buy $FF
+          <a className="btn btn-primary" href={BUY_LINK} target="_blank" rel="noopener noreferrer">
+            Buy {TOKEN_TICKER}
           </a>
         </div>
 
@@ -118,10 +113,7 @@ const Navbar = () => {
         </button>
       </nav>
 
-      <div
-        className={`navbar-overlay ${navOpen ? "open" : ""}`}
-        onClick={() => setNavOpen(false)}
-      />
+      <div className={`navbar-overlay ${navOpen ? "open" : ""}`} onClick={() => setNavOpen(false)} />
 
       <div className={`navbar-drawer ${navOpen ? "open" : ""}`}>
         <div className="drawer-links">
@@ -143,13 +135,8 @@ const Navbar = () => {
           <button className="btn btn-secondary" onClick={handleCopyCA}>
             {copied ? "Copied" : "Copy CA"}
           </button>
-          <a
-            className="btn btn-primary"
-            href="https://bonk.fun/token/758yZPp2QEmrMgMACiUS2K2sTLsfSw9NprWoGxdxbonk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Buy $FF
+          <a className="btn btn-primary" href={BUY_LINK} target="_blank" rel="noopener noreferrer">
+            Buy {TOKEN_TICKER}
           </a>
         </div>
       </div>

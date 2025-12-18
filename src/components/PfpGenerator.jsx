@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import chairBase from "../assets/ff-chair.jpg";
 import Toast from "./Toast";
+import { TOKEN_NAME, TOKEN_TICKER } from "../constants.js";
 
 const PfpGenerator = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -29,7 +30,7 @@ const PfpGenerator = () => {
     event.preventDefault();
     if (!selectedFile) return;
     setLoading(true);
-    setInfo("Generating… this may take up to a minute.");
+    setInfo("Generating — this may take up to a minute.");
     setError("");
 
     const formData = new FormData();
@@ -77,14 +78,11 @@ const PfpGenerator = () => {
     <>
       <section className="pfp-generator-section reveal">
         <div className="pfp-generator-heading">
-          <p className="section-kicker">Financial Freedom PFP Generator</p>
-          <h2 className="pfp-generator-title">
-            Take your rightful seat at the table of Financial Freedom.
-          </h2>
+          <p className="section-kicker">{TOKEN_NAME} PFP Generator</p>
+          <h2 className="pfp-generator-title">Take your seat in the Fox den.</h2>
           <p>
-            Upload, generate, download, and flex the new profile pic. Tag
-            #FinancialFreedom and mention <span>$FF</span> so the movement sees you
-            in your seat.
+            Upload, generate, download, and flex the new profile pic. Tag #{TOKEN_NAME.replace(" ", "")} and mention{" "}
+            <span>{TOKEN_TICKER}</span> so the pack sees you in your seat.
           </p>
           <p className="pfp-disclaimer">
             Disclaimer: Guardrails apply; unclear or low-res uploads may reduce accuracy. Beta—improving continuously.
@@ -97,15 +95,15 @@ const PfpGenerator = () => {
           <div className="pfp-meta-grid">
             <div className="pfp-card">
               <h4>Upload</h4>
-              <p>Upload your existing PFP so you can take your seat at the table of Financial Freedom.</p>
+              <p>Upload your existing PFP so you can claim your spot with the Fox Coin community.</p>
             </div>
             <div className="pfp-card">
               <h4>Generate</h4>
-              <p>Our PFP engine crafts a refined PFP with your likeness, ready to share with the community.</p>
+              <p>Our PFP engine crafts a refined PFP with your likeness, ready to share with the pack.</p>
             </div>
             <div className="pfp-card">
               <h4>Share</h4>
-              <p>Save the PFP, tag #FinancialFreedom, and include our $FF ticker.</p>
+              <p>Save the PFP, tag #{TOKEN_NAME.replace(" ", "")}, and include our {TOKEN_TICKER} ticker.</p>
             </div>
           </div>
         </div>
@@ -128,7 +126,7 @@ const PfpGenerator = () => {
               <a
                 className={`btn btn-outline ${!generatedImage ? "disabled" : ""}`}
                 href={downloadHref}
-                download="financial-freedom-pfp.png"
+                download="fox-coin-pfp.png"
               >
                 Download final PFP
               </a>

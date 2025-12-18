@@ -33,38 +33,38 @@ import pic31 from "../assets/ff-pic (31).jpg";
 import pic32 from "../assets/ff-pic (32).jpg";
 
 const baseImages = [
-  { src: pic1, alt: "Financial Freedom community photo 1" },
-  { src: pic2, alt: "Financial Freedom community photo 2" },
-  { src: pic3, alt: "Financial Freedom community photo 3" },
-  { src: pic4, alt: "Financial Freedom community photo 4" },
-  { src: pic5, alt: "Financial Freedom community photo 5" },
-  { src: pic6, alt: "Financial Freedom community photo 6" },
-  { src: pic7, alt: "Financial Freedom community photo 7" },
-  { src: pic8, alt: "Financial Freedom community photo 8" },
-  { src: pic9, alt: "Financial Freedom community photo 9" },
-  { src: pic10, alt: "Financial Freedom community photo 10" },
-  { src: pic11, alt: "Financial Freedom community photo 11" },
-  { src: pic12, alt: "Financial Freedom community photo 12" },
-  { src: pic13, alt: "Financial Freedom community photo 13" },
-  { src: pic14, alt: "Financial Freedom community photo 14" },
-  { src: pic15, alt: "Financial Freedom community photo 15" },
-  { src: pic16, alt: "Financial Freedom community photo 16" },
-  { src: pic17, alt: "Financial Freedom community photo 17" },
-  { src: pic18, alt: "Financial Freedom community photo 18" },
-  { src: pic19, alt: "Financial Freedom community photo 19" },
-  { src: pic20, alt: "Financial Freedom community photo 20" },
-  { src: pic21, alt: "Financial Freedom community photo 21" },
-  { src: pic22, alt: "Financial Freedom community photo 22" },
-  { src: pic23, alt: "Financial Freedom community photo 23" },
-  { src: pic24, alt: "Financial Freedom community photo 24" },
-  { src: pic25, alt: "Financial Freedom community photo 25" },
-  { src: pic26, alt: "Financial Freedom community photo 26" },
-  { src: pic27, alt: "Financial Freedom community photo 27" },
-  { src: pic28, alt: "Financial Freedom community photo 28" },
-  { src: pic29, alt: "Financial Freedom community photo 29" },
-  { src: pic30, alt: "Financial Freedom community photo 30" },
-  { src: pic31, alt: "Financial Freedom community photo 31" },
-  { src: pic32, alt: "Financial Freedom community photo 32" }
+  { src: pic1, alt: "Fox Coin community photo 1" },
+  { src: pic2, alt: "Fox Coin community photo 2" },
+  { src: pic3, alt: "Fox Coin community photo 3" },
+  { src: pic4, alt: "Fox Coin community photo 4" },
+  { src: pic5, alt: "Fox Coin community photo 5" },
+  { src: pic6, alt: "Fox Coin community photo 6" },
+  { src: pic7, alt: "Fox Coin community photo 7" },
+  { src: pic8, alt: "Fox Coin community photo 8" },
+  { src: pic9, alt: "Fox Coin community photo 9" },
+  { src: pic10, alt: "Fox Coin community photo 10" },
+  { src: pic11, alt: "Fox Coin community photo 11" },
+  { src: pic12, alt: "Fox Coin community photo 12" },
+  { src: pic13, alt: "Fox Coin community photo 13" },
+  { src: pic14, alt: "Fox Coin community photo 14" },
+  { src: pic15, alt: "Fox Coin community photo 15" },
+  { src: pic16, alt: "Fox Coin community photo 16" },
+  { src: pic17, alt: "Fox Coin community photo 17" },
+  { src: pic18, alt: "Fox Coin community photo 18" },
+  { src: pic19, alt: "Fox Coin community photo 19" },
+  { src: pic20, alt: "Fox Coin community photo 20" },
+  { src: pic21, alt: "Fox Coin community photo 21" },
+  { src: pic22, alt: "Fox Coin community photo 22" },
+  { src: pic23, alt: "Fox Coin community photo 23" },
+  { src: pic24, alt: "Fox Coin community photo 24" },
+  { src: pic25, alt: "Fox Coin community photo 25" },
+  { src: pic26, alt: "Fox Coin community photo 26" },
+  { src: pic27, alt: "Fox Coin community photo 27" },
+  { src: pic28, alt: "Fox Coin community photo 28" },
+  { src: pic29, alt: "Fox Coin community photo 29" },
+  { src: pic30, alt: "Fox Coin community photo 30" },
+  { src: pic31, alt: "Fox Coin community photo 31" },
+  { src: pic32, alt: "Fox Coin community photo 32" }
 ];
 
 const MediaSection = () => {
@@ -165,7 +165,7 @@ const MediaSection = () => {
         <p className="section-kicker">Media</p>
         <h2>Moments from the movement</h2>
         <p className="section-subtitle">
-          A rolling gallery of visuals from the Financial Freedom community.
+          A rolling gallery of visuals from the Fox Coin community.
         </p>
         <div className="media-controls">
           <button

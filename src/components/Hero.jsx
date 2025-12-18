@@ -1,27 +1,23 @@
-import ffCoin from "../assets/ff-coin.png";
+const heroImage = "/fox-logo.png";
+import { BUY_LINK, TOKEN_NAME, TOKEN_TICKER } from "../constants.js";
 
 const Hero = () => {
   return (
     <section className="hero reveal">
       <div className="hero-content">
-        <p className="pill">Solana native • Community owned</p>
+        <p className="pill">Solana native | Community owned</p>
         <h1>
-          <span className="hero-title-highlight">Financial Freedom</span> is earned, not given.
+          <span className="hero-title-highlight">{TOKEN_NAME}</span> runs with the pack.
         </h1>
         <p className="hero-subtitle">
-          Financial Freedom is a Solana-born community for people who know they were
-          meant for more than working, worrying, and hoping it all works out. We share
-          ideas, accountability, and conviction so more of us can buy back our time.
+          {TOKEN_NAME} ({TOKEN_TICKER}) is a Solana meme coin for foxes who move fast, look out for
+          each other, and keep building even when the forest gets noisy. Grab some {TOKEN_TICKER},
+          bring your friends, and let the den know you are here.
         </p>
 
         <div className="hero-actions">
-          <a
-            href="https://bonk.fun/token/758yZPp2QEmrMgMACiUS2K2sTLsfSw9NprWoGxdxbonk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            Buy $FF
+          <a href={BUY_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Buy {TOKEN_TICKER}
           </a>
 
           <a
@@ -44,19 +40,15 @@ const Hero = () => {
         </div>
 
         <p className="hero-note">
-          No promises, no shortcuts, just a group of people serious about building lives
-          they do not need a holiday from.
+          No promises, no shortcuts—just a crew of foxes who hunt together. Always verify the contract
+          address before you swap.
         </p>
       </div>
 
       <div className="hero-visual">
         <div className="hero-logo-wrapper">
           <div className="hero-logo-ring">
-            <img
-              src={ffCoin}
-              alt="Financial Freedom coin"
-              className="hero-logo-image"
-            />
+            <img src={heroImage} alt="Fox Coin" className="hero-logo-image" />
           </div>
         </div>
       </div>
