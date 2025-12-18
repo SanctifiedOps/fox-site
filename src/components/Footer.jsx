@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer" style={{ textAlign: "center", marginTop: "60px" }}>
       <p
         style={{
-          color: "#888",
+          color: "#3c2a16",
           fontSize: "0.9rem",
           maxWidth: "750px",
           margin: "0 auto",
@@ -17,7 +17,7 @@ const Footer = () => {
 
       <p
         style={{
-          color: "#666",
+          color: "#2f1f10",
           fontSize: "0.85rem",
           maxWidth: "750px",
           margin: "14px auto 0",
@@ -31,7 +31,7 @@ const Footer = () => {
 
       <p
         style={{
-          color: "#666",
+          color: "#2f1f10",
           fontSize: "0.85rem",
           maxWidth: "750px",
           margin: "12px auto 0",

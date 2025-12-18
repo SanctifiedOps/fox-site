@@ -1,18 +1,25 @@
+import { BUY_LINK, CONTRACT_ADDRESS, TOKEN_NAME, TOKEN_TICKER, X_COMMUNITY_LINK } from "../constants.js";
 const heroImage = "/fox-logo.png";
-import { BUY_LINK, TOKEN_NAME, TOKEN_TICKER } from "../constants.js";
 
 const Hero = () => {
+  const handleCopyCA = async () => {
+    try {
+      await navigator.clipboard.writeText(CONTRACT_ADDRESS);
+    } catch (err) {
+      // no-op if clipboard blocked
+    }
+  };
+
   return (
     <section className="hero reveal">
       <div className="hero-content">
-        <p className="pill">Solana native | Community owned</p>
         <h1>
-          <span className="hero-title-highlight">{TOKEN_NAME}</span> runs with the pack.
+          <span className="hero-title-highlight">{TOKEN_NAME}</span> On Solana
         </h1>
         <p className="hero-subtitle">
-          {TOKEN_NAME} ({TOKEN_TICKER}) is a Solana meme coin for foxes who move fast, look out for
-          each other, and keep building even when the forest gets noisy. Grab some {TOKEN_TICKER},
-          bring your friends, and let the den know you are here.
+          Fox Coin ({TOKEN_TICKER}) is a Solana-native meme token built around Pochita and the culture
+          that formed naturally around her. Community-owned, fast-moving, and rooted in shared history,
+          {TOKEN_TICKER} is for those who understand that the strongest projects move as a pack.
         </p>
 
         <div className="hero-actions">
@@ -20,29 +27,14 @@ const Hero = () => {
             Buy {TOKEN_TICKER}
           </a>
 
-          <a
-            href="https://x.com/i/communities/1994507546619736378"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline"
-          >
+          <button type="button" className="btn btn-secondary" onClick={handleCopyCA}>
+            Copy CA
+          </button>
+
+          <a href={X_COMMUNITY_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
             X Community
           </a>
-
-          <a
-            href="https://www.tiktok.com/@financiallyfreeusd1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline"
-          >
-            Follow on TikTok
-          </a>
         </div>
-
-        <p className="hero-note">
-          No promises, no shortcuts—just a crew of foxes who hunt together. Always verify the contract
-          address before you swap.
-        </p>
       </div>
 
       <div className="hero-visual">

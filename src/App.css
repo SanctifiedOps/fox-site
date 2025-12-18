@@ -315,21 +315,23 @@ a {
 /* HERO */
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
-  gap: 40px;
-  padding: 40px 36px 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 30px 18px 36px;
   border-radius: var(--ff-radius-lg);
-  background: linear-gradient(160deg, #fffdf7 0%, #ffe8d4 60%, #ffd6b4 100%);
-  border: 1px solid rgba(254, 172, 4, 0.24);
-  box-shadow: 0 24px 60px rgba(254, 172, 4, 0.26);
-  margin-bottom: 56px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 32px;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   line-height: 1.05;
   margin: 16px 0;
+  text-align: center;
 }
 
 .hero-title-highlight {
@@ -338,13 +340,15 @@ a {
 
 .hero-subtitle {
   color: var(--ff-muted);
-  max-width: 34rem;
+  max-width: 42rem;
   font-size: 1rem;
+  text-align: center;
 }
 
 .pill {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 5px 12px;
   border-radius: var(--ff-radius-pill);
   background: rgba(254, 172, 4, 0.9);
@@ -353,13 +357,15 @@ a {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #fff;
+  margin: 0 auto;
 }
 
 .hero-actions {
   display: flex;
   gap: 12px;
-  margin: 22px 0 14px;
+  margin: 18px 0 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-actions .btn {
@@ -370,6 +376,7 @@ a {
 .hero-note {
   font-size: 0.78rem;
   color: var(--ff-muted);
+  text-align: center;
 }
 
 /* HERO VISUAL – BIG LOGO */
@@ -378,6 +385,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  order: -1;
+  margin-bottom: 6px;
 }
 
 .hero-logo-wrapper {
@@ -1258,6 +1267,12 @@ a {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.instagram-section {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 42px;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1024px) {
@@ -1283,12 +1298,7 @@ a {
   }
 
   .hero {
-    grid-template-columns: 1fr;
-    padding: 26px 20px 30px;
-  }
-
-  .hero-visual {
-    order: -1;
+    padding: 26px 16px 30px;
   }
 
   .grid,

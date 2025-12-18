@@ -1,4 +1,4 @@
-import { BUY_LINK, DEX_LINK, TOKEN_NAME, TOKEN_TICKER } from "../constants.js";
+import { BUY_LINK, DEX_LINK, TOKEN_NAME, TOKEN_TICKER, X_COMMUNITY_LINK } from "../constants.js";
 
 const LinksSection = () => {
   return (
@@ -13,12 +13,7 @@ const LinksSection = () => {
 
       <div className="link-grid">
         {/* Twitter / X */}
-        <a
-          href="https://x.com/i/communities/1994507546619736378"
-          target="_blank"
-          rel="noreferrer"
-          className="link-tile"
-        >
+        <a href={X_COMMUNITY_LINK} target="_blank" rel="noreferrer" className="link-tile">
           <span>Twitter / X</span>
           <span className="link-tag">Announcements &amp; raids</span>
         </a>
@@ -35,16 +30,6 @@ const LinksSection = () => {
           <span className="link-tag">Swap SOL for {TOKEN_NAME}</span>
         </a>
 
-        {/* TikTok */}
-        <a
-          href="https://www.tiktok.com/@financiallyfreeusd1"
-          target="_blank"
-          rel="noreferrer"
-          className="link-tile"
-        >
-          <span>TikTok</span>
-          <span className="link-tag">Clips &amp; community moments</span>
-        </a>
       </div>
     </section>
   );
