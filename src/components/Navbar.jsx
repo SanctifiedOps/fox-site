@@ -58,7 +58,7 @@ const Navbar = () => {
             {copied ? "Copied" : "Copy CA"}
           </button>
 
-          <a className="btn btn-outline" href={X_COMMUNITY_LINK} target="_blank" rel="noopener noreferrer">
+          <a className="btn btn-secondary" href={X_COMMUNITY_LINK} target="_blank" rel="noopener noreferrer">
             X Community
           </a>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
           <button className="btn btn-secondary" onClick={handleCopyCA}>
             {copied ? "Copied" : "Copy CA"}
           </button>
-          <a className="btn btn-outline" href={X_COMMUNITY_LINK} target="_blank" rel="noopener noreferrer">
+          <a className="btn btn-secondary" href={X_COMMUNITY_LINK} target="_blank" rel="noopener noreferrer">
             X Community
           </a>
           <a className="btn btn-primary" href={BUY_LINK} target="_blank" rel="noopener noreferrer">

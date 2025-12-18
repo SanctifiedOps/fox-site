@@ -5,7 +5,7 @@ const AboutSection = () => {
     <section id="about" className="section reveal">
       <div className="section-header">
         <p className="section-kicker">About</p>
-        <h2>Fox Coin is for people who want more</h2>
+        <h2>Pochita is a Fox 🦊</h2>
         <p className="section-subtitle">
           $FOX was created to honour Pochita, the adopted sister of Cheems, one of the most recognisable and influential figures in internet culture.
         </p>
